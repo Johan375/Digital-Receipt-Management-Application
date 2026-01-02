@@ -249,7 +249,7 @@ The application is organized into modular components that work together to provi
 
 ---
 
-## Flowchart or Sequence Diagram
+## Flowchart
 
 The following flowchart illustrates the user interaction and navigation flow throughout the application:
 
