@@ -1,7 +1,6 @@
 # Digital Receipt Management 
 
 ---
-
 ## Project Team Members
 
 | Name | Matric Number |
