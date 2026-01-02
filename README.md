@@ -111,84 +111,74 @@ The primary target users for this application are **Malaysian taxpayers**, inclu
 
 ---
 
+## Proposed UI Mock-up
+
+Below are the key screen designs that illustrate the user interface of the application:
+
+### Authentication Screen
+The authentication interface provides secure login and registration functionality for users to access their account.
+
+![Authentication Screen](images/authentication.png)
+
+### Dashboard
+The dashboard offers users a comprehensive overview of their receipt management activities, including statistics, recent uploads, and quick access to key features.
+
+![Dashboard Screen](images/dashboard.png)
+
+---
+
 ## Architecture / Technical Design
 
 ### Development Framework
 The application will be developed as a **cross-platform mobile app** to ensure broad accessibility and user convenience.
 
-**Frontend:**
-- **Framework Options**: React Native or Flutter
-  - **React Native**: JavaScript/TypeScript-based development
-  - **Flutter**: Dart-based development
-- **Platform Support**: iOS and Android devices
-- **UI Libraries**: Material Design or Cupertino for native look and feel
-
-**Backend:**
-- **Server Framework**: Node.js with Express.js or Django (Python)
-- **API Architecture**: RESTful APIs for client-server communication
-- **Authentication**: JWT (JSON Web Tokens) or OAuth 2.0
-
-**Database:**
-- **Cloud Database**: Firebase Firestore or Amazon DynamoDB
-- **Storage**: Cloud storage for receipt images (Firebase Storage, AWS S3, or Google Cloud Storage)
-
-**AI/ML Services:**
-- **OCR**: Tesseract or Google Vision API
-- **Machine Learning**: TensorFlow Lite or custom models for expense categorization
-
 ### Widget/Component Structure
 
-```
-App Root
-├── Authentication Module
-│   ├── Login Screen
-│   ├── Registration Screen
-│   └── Password Reset Screen
-│
-├── Main Navigation Container
-│   ├── Dashboard Screen
-│   │   ├── Statistics Widget
-│   │   ├── Recent Receipts Widget
-│   │   └── Quick Action Buttons
-│   │
-│   ├── Receipt Scanner Module
-│   │   ├── Camera Component
-│   │   ├── Image Preview Component
-│   │   └── OCR Processing Component
-│   │
-│   ├── Receipt Management Module
-│   │   ├── Receipt List Component
-│   │   ├── Filter/Sort Component
-│   │   ├── Receipt Detail Screen
-│   │   └── Edit Receipt Component
-│   │
-│   ├── Category Management Module
-│   │   ├── Category Overview
-│   │   ├── Category Details
-│   │   └── Expense Charts
-│   │
-│   ├── Export Module
-│   │   ├── Date Range Selector
-│   │   ├── Receipt Selection Component
-│   │   └── Export Format Selector
-│   │
-│   └── Profile/Settings Module
-│       ├── User Profile Component
-│       ├── Settings Options
-│       └── Help/Support Component
-│
-└── Common Components
-    ├── Loading Indicators
-    ├── Error Boundaries
-    ├── Alert/Dialog Components
-    └── Custom Buttons/Inputs
-```
+The application is organized into modular components that work together to provide a seamless user experience.
+
+**Authentication Module**: Handles user registration, login, and password recovery to ensure secure access to the application.
+- a. Login Screen
+- b. Registration Screen
+- c. Password Reset Screen
+
+**Dashboard Screen**: Provides users with an overview of their receipt management activities and quick access to key functions.
+- a. Statistics Widget
+- b. Recent Receipts Widget
+- c. Quick Action Buttons
+
+**Receipt Scanner Module**: Enables users to capture and process physical receipts using their device camera.
+- a. Camera Component
+- b. Image Preview Component
+- c. OCR Processing Component
+
+**Receipt Management Module**: Allows users to view, organize, and manage their digitized receipts.
+- a. Receipt List Component
+- b. Filter/Sort Component
+- c. Receipt Detail Screen
+- d. Edit Receipt Component
+
+**Category Management Module**: Helps users organize receipts by tax-deductible categories and visualize spending patterns.
+- a. Category Overview
+- b. Category Details
+- c. Expense Charts
+
+**Export Module**: Facilitates the compilation and export of receipts for tax submission purposes.
+- a. Date Range Selector
+- b. Receipt Selection Component
+- c. Export Format Selector
+
+**Profile/Settings Module**: Manages user account information, preferences, and application settings.
+- a. User Profile Component
+- b. Settings Options
+- c. Help/Support Component
+
+**Common Components**: Reusable UI elements used throughout the application for consistency.
+- a. Loading Indicators
+- b. Error Boundaries
+- c. Alert/Dialog Components
+- d. Custom Buttons/Inputs
 
 ### State Management Approach
-
-**Recommended: Provider Pattern (for Flutter) or Redux/Context API (for React Native)**
-
-#### State Management Strategy:
 
 1. **Global State**:
    - User authentication status
@@ -207,92 +197,11 @@ App Root
    - UI interactions (modals, dropdowns)
    - Loading states for individual operations
 
-#### Implementation Options:
-
-**For Flutter:**
-- **Provider**: Lightweight and official recommendation
-- **Riverpod**: Modern, compile-safe alternative to Provider
-- **Bloc**: For complex state management with event-driven architecture
-
-**For React Native:**
-- **Context API + useReducer**: Built-in React solution for moderate complexity
-- **Redux**: Predictable state container for complex applications
-- **MobX**: Reactive state management with less boilerplate
-
-### Data Flow:
-
-```
-User Action → Component → State Manager → API Service → Backend
-                ↓                                           ↓
-            Local State Update ← State Manager ← Response Data
-```
-
 ---
 
 ## Data Model
 
-### Firestore Collection-Document Model
-
-```
-users (collection)
-├── {userId} (document)
-    ├── email: string
-    ├── displayName: string
-    ├── createdAt: timestamp
-    ├── lastLogin: timestamp
-    ├── preferences: map
-    │   ├── notifications: boolean
-    │   ├── defaultCurrency: string
-    │   └── theme: string
-    │
-    └── receipts (subcollection)
-        ├── {receiptId} (document)
-            ├── imageUrl: string
-            ├── thumbnailUrl: string
-            ├── merchantName: string
-            ├── amount: number
-            ├── currency: string
-            ├── date: timestamp
-            ├── category: string
-            ├── taxDeductible: boolean
-            ├── items: array
-            │   ├── [0]: map
-            │   │   ├── name: string
-            │   │   ├── quantity: number
-            │   │   └── price: number
-            ├── extractedData: map
-            │   ├── rawText: string
-            │   ├── confidence: number
-            │   └── processingDate: timestamp
-            ├── tags: array of strings
-            ├── notes: string
-            ├── createdAt: timestamp
-            ├── updatedAt: timestamp
-            └── taxYear: number
-
-categories (collection)
-├── {categoryId} (document)
-    ├── name: string
-    ├── description: string
-    ├── icon: string
-    ├── color: string
-    ├── taxDeductible: boolean
-    ├── lhdnCode: string
-    └── keywords: array of strings
-
-exports (collection)
-├── {exportId} (document)
-    ├── userId: string
-    ├── taxYear: number
-    ├── format: string (ZIP/PDF)
-    ├── receiptCount: number
-    ├── totalAmount: number
-    ├── downloadUrl: string
-    ├── createdAt: timestamp
-    └── expiresAt: timestamp
-```
-
-### Entity Relationship Diagram (ERD) Description
+### Entity Relationship Diagram (ERD) 
 
 **Entities:**
 
@@ -346,38 +255,6 @@ exports (collection)
 
 ---
 
-## Development Environment
-
-**Hardware:**
-- Modern computers with sufficient processing power
-- iOS and Android devices for testing
-
-**Network:**
-- High-speed internet for cloud services
-- Cloud platforms: AWS, Google Cloud, or Azure
-
----
-
-## Compliance and Security
-
-- **Data Protection**: Compliance with Malaysia's Personal Data Protection Act (PDPA)
-- **Encryption**: End-to-end encryption for sensitive data
-- **Authentication**: Secure multi-factor authentication options
-- **Storage**: 7-year retention policy aligned with LHDN requirements
-
----
-
-## Future Enhancements
-
-- Direct integration with LHDN e-Filing system
-- Multi-language support (Malay, English, Mandarin)
-- Expense analytics and insights
-- Budget tracking features
-- Receipt sharing for family accounts
-- Blockchain-based verification for document authenticity
-
----
-
 ## Flowchart or Sequence Diagram
 
 The following flowchart illustrates the user interaction and navigation flow throughout the application:
@@ -387,17 +264,3 @@ The following flowchart illustrates the user interaction and navigation flow thr
 The flowchart demonstrates the complete user journey from authentication through receipt scanning, categorization, management, and export processes, showing how users interact with various modules and the decision points throughout the application flow.
 
 ---
-
-## License
-
-*To be determined*
-
----
-
-## Contributors
-
-*To be updated*
-
----
-
-**Last Updated**: January 2026
