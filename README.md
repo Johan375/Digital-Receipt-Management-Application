@@ -1,5 +1,6 @@
 # Digital Receipt Management 
 
+---
 
 ## Project Team Members
 
