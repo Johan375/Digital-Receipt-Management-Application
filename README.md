@@ -2,7 +2,7 @@
 
 ---
 
-## Project Team
+## Project Team Members
 
 | Name | Matric Number |
 |------|---------------|
