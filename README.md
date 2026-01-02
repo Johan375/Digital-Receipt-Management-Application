@@ -258,3 +258,13 @@ The following flowchart illustrates the user interaction and navigation flow thr
 The flowchart demonstrates the complete user journey from authentication through receipt scanning, categorization, management, and export processes, showing how users interact with various modules and the decision points throughout the application flow.
 
 ---
+
+## References
+
+1. MyGOV - The Government of Malaysia's Official Portal. (n.d.). www.malaysia.gov.my. https://www.malaysia.gov.my/portal/content/30643
+
+2. Public Ruling No. 6/2000 (Revised) KEEPING SUFFICIENT RECORDS (PERSONS OTHER THAN COMPANIES OR INDIVIDUALS). (n.d.). Retrieved February 7, 2025, from https://phl.hasil.gov.my/pdf/pdfam/PR6_2000_Rev.pdf?
+
+3. Flutter Documentation. (n.d.). Get started: Learn Flutter. https://docs.flutter.dev/get-started/learn-flutter
+
+---
