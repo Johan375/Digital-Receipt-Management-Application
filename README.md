@@ -3,7 +3,7 @@
 ---
 
 ## Introduction
-A mobile application designed to revolutionize tax-related receipt management for Malaysian taxpayers. This app digitizes physical receipts, automatically categorizes expenses using AI and OCR technology, and seamlessly integrates with LHDN's e-Filing system to simplify tax filing and ensure compliance with record-keeping requirements.
+This is a mobile application designed to revolutionize tax related receipt management for Malaysian taxpayers. This app digitizes physical receipts, automatically categorizes expenses using AI and OCR technology, and seamlessly integrates with LHDN's e-Filing system to simplify tax filing and ensure compliance with record-keeping requirements.
 
 ### Problem Description
 In Malaysia, the Inland Revenue Board (Lembaga Hasil Dalam Negeri Malaysia, LHDN) has implemented the e-Filing system, enabling taxpayers to submit their Income Tax Return Forms (ITRF) electronically. Despite this advancement, taxpayers are still required to retain original source documents, such as invoices and receipts, for a period of seven years for verification purposes.
@@ -375,6 +375,16 @@ exports (collection)
 - Budget tracking features
 - Receipt sharing for family accounts
 - Blockchain-based verification for document authenticity
+
+---
+
+## Flowchart or Sequence Diagram
+
+The following flowchart illustrates the user interaction and navigation flow throughout the application:
+
+![TaxMate Application Flowchart](images/flowchart_taxmate.drawio.png)
+
+The flowchart demonstrates the complete user journey from authentication through receipt scanning, categorization, management, and export processes, showing how users interact with various modules and the decision points throughout the application flow.
 
 ---
 
