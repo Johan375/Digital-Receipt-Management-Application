@@ -2,6 +2,16 @@
 
 ---
 
+## Project Team
+
+| Name | Matric Number |
+|------|---------------|
+| Muhammad Ikmal Hakimi Bin Rosli | 2210827 |
+| Muhammad Muslihuddin Bin Mustaffar | 2213263 |
+| Johan Adam Bin Ahmad | 2116387 |
+
+---
+
 ## Introduction
 This is a mobile application designed to revolutionize tax related receipt management for Malaysian taxpayers. This app digitizes physical receipts, automatically categorizes expenses using AI and OCR technology, and seamlessly integrates with LHDN's e-Filing system to simplify tax filing and ensure compliance with record-keeping requirements.
 
@@ -236,22 +246,6 @@ The application is organized into modular components that work together to provi
 3. **Filter receipts by date range**: Query with `where('date', '>=', startDate).where('date', '<=', endDate)`
 4. **Get receipts for specific tax year**: Query with `where('taxYear', '==', year)`
 5. **Recent receipts**: Query with `orderBy('createdAt', 'desc').limit(10)`
-
----
-
-## Technology Stack Summary
-
-| Component | Technology |
-|-----------|------------|
-| **Frontend Framework** | React Native / Flutter |
-| **Programming Language** | JavaScript/TypeScript / Dart |
-| **Backend** | Node.js (Express.js) / Django (Python) |
-| **Database** | Firebase Firestore / Amazon DynamoDB |
-| **Cloud Storage** | Firebase Storage / AWS S3 / Google Cloud Storage |
-| **OCR Service** | Tesseract / Google Vision API |
-| **AI/ML** | TensorFlow Lite / Custom ML Models |
-| **Authentication** | Firebase Auth / JWT |
-| **State Management** | Provider/Riverpod/Bloc (Flutter) / Redux/Context API (React Native) |
 
 ---
 
