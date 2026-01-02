@@ -239,14 +239,6 @@ The application is organized into modular components that work together to provi
 - **Category ↔ Receipt**: One-to-Many (One category can be assigned to many receipts)
 - **User ↔ Export**: One-to-Many (One user can create many exports)
 
-### Data Access Patterns
-
-1. **Retrieve all receipts for a user**: Query `users/{userId}/receipts`
-2. **Filter receipts by category**: Query with `where('category', '==', categoryId)`
-3. **Filter receipts by date range**: Query with `where('date', '>=', startDate).where('date', '<=', endDate)`
-4. **Get receipts for specific tax year**: Query with `where('taxYear', '==', year)`
-5. **Recent receipts**: Query with `orderBy('createdAt', 'desc').limit(10)`
-
 ---
 
 ## Flowchart
