@@ -1,4 +1,4 @@
-# Digital Receipt Management 
+# Finance Tracker
 
 ---
 
