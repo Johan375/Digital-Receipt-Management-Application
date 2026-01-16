@@ -1,4 +1,4 @@
-# Digital Receipt Management 
+# Finance Tracker
 
 ---
 
@@ -13,54 +13,63 @@
 ---
 
 ## Introduction
-This is a mobile application designed to revolutionize tax related receipt management for Malaysian taxpayers. This app digitizes physical receipts, automatically categorizes expenses using AI and OCR technology, and seamlessly integrates with LHDN's e-Filing system to simplify tax filing and ensure compliance with record-keeping requirements.
+This is a mobile application designed to help individuals manage their personal finances effectively. Finance Tracker enables users to set monthly budgets, scan and track receipts digitally, categorize expenses by payment type, and maintain comprehensive financial records—all in one convenient platform.
 
 ### Problem Description
-In Malaysia, the Inland Revenue Board (Lembaga Hasil Dalam Negeri Malaysia, LHDN) has implemented the e-Filing system, enabling taxpayers to submit their Income Tax Return Forms (ITRF) electronically. Despite this advancement, taxpayers are still required to retain original source documents, such as invoices and receipts, for a period of seven years for verification purposes.
+Many individuals struggle with managing their personal finances due to a lack of proper tracking tools. Without a systematic approach to monitoring expenses, people often:
 
-The traditional method of storing physical receipts is often cumbersome, prone to loss or damage, and can lead to disorganized record-keeping, making the tax filing process more challenging. Physical receipts printed on thermal paper can fade over time, leading to potential loss of critical information, and accessing them requires manual effort, which can be time-consuming, especially during tax season.
+- Overspend and exceed their monthly budgets
+- Lose track of where their money goes
+- Misplace physical receipts, making it difficult to review past transactions
+- Find it challenging to identify spending patterns across different payment methods
+
+Traditional methods of tracking expenses using spreadsheets or physical records are time-consuming and inefficient. Physical receipts can easily be lost, damaged, or fade over time, making it nearly impossible to maintain accurate financial records.
 
 ### Motivation
-The current process of managing tax-related receipts presents several specific problems:
+The current process of managing personal finances presents several specific challenges:
 
-- **Risk of Loss or Damage**: Physical receipts are susceptible to being lost, damaged, or becoming illegible over time, hindering taxpayers' ability to provide necessary documentation during audits.
+- **Budget Overruns**: Without real-time tracking and monthly budget limits, individuals often overspend without realizing it until it's too late.
 
-- **Time-Consuming Retrieval**: Manually searching through piles of receipts to find specific documents for tax deductions is inefficient and can lead to missed deductions due to overlooked receipts.
+- **Receipt Management**: Physical receipts pile up and become disorganized, making it difficult to track expenses or verify past purchases.
 
-- **Lack of Categorization**: Without a systematic approach, taxpayers may struggle to categorize expenses accurately, potentially leading to errors in tax filings or missed opportunities for tax reliefs.
+- **Payment Type Confusion**: With multiple payment methods (cash, e-wallets, cards) in use, it's hard to get a clear picture of spending patterns across different channels.
 
-- **Storage Limitations**: Accumulating years' worth of physical receipts requires substantial storage space and can become unmanageable.
+- **Lack of Financial Awareness**: Without proper tracking tools, individuals struggle to identify spending habits and make informed financial decisions.
 
 ### Relevance
-This project addresses a real-world problem faced by Malaysian taxpayers by leveraging technology to digitize, categorize, and store receipts securely. By digitizing receipt management and integrating with LHDN's e-Filing system, this application aims to enhance the efficiency and accuracy of the tax filing process, reduce the reliance on physical document storage, and support taxpayers in maintaining comprehensive and organized financial records.
+This project addresses real-world financial management challenges by providing a comprehensive solution for budget tracking, receipt digitization, and expense categorization. By combining budget monitoring with digital receipt management and payment type tracking, Finance Tracker empowers users to take control of their finances and make better spending decisions.
 
 ---
 
 ## Objectives of the Proposed Mobile App
 
-The primary objective of this project is to develop a mobile application that digitizes and streamlines the management of tax-related receipts for Malaysian taxpayers, thereby enhancing compliance with LHDN's requirements and simplifying the tax filing process. The specific objectives are:
+The primary objective of this project is to develop a mobile application that helps individuals manage their personal finances effectively by tracking expenses, setting budgets, and digitizing receipts. The specific objectives are:
 
-1. **Digital Receipt Storage**: Enable users to securely scan and store receipts in a cloud-based system, reducing the reliance on physical document storage and mitigating the risk of loss or damage.
+1. **Monthly Budget Management**: Enable users to set monthly budgets and track their spending in real-time to prevent overspending and maintain financial discipline.
 
-2. **Automated Expense Categorization**: Utilize Optical Character Recognition (OCR) and Artificial Intelligence (AI) technologies to extract relevant information from scanned receipts and suggest appropriate tax-deductible categories, such as medical expenses, education fees, and lifestyle expenses.
+2. **Digital Receipt Storage**: Allow users to scan and store receipts digitally, reducing reliance on physical receipts and preventing loss or damage of important transaction records.
 
-3. **Efficient Retrieval and Export**: Provide users with the ability to easily retrieve stored receipts and export them in a consolidated format (e.g., .ZIP file) for a selected tax year, facilitating prompt submission to LHDN when required.
+3. **Receipt Scanning and Data Extraction**: Utilize Optical Character Recognition (OCR) technology to extract relevant information from scanned receipts, including merchant name, date, amount, and items purchased.
 
-4. **User-Friendly Interface**: Design an intuitive and accessible user interface that simplifies the process of receipt management, making it convenient for users to scan, categorize, and retrieve receipts.
+4. **Payment Type Categorization**: Track expenses by payment method (cash payment, e-wallet, card payment) to provide users with insights into their spending patterns across different payment channels.
+
+5. **Profile Management**: Provide users with customizable profile settings to personalize their financial tracking experience and manage account preferences.
+
+6. **User-Friendly Interface**: Design an intuitive and accessible user interface that simplifies the process of budget tracking, receipt scanning, and expense management.
 
 ---
 
 ## Target Users
 
-The primary target users for this application are **Malaysian taxpayers**, including:
+The primary target users for this application are **individuals seeking better financial management**, including:
 
 | User Group | Description |
 |------------|-------------|
-| **Age Group** | Individuals aged 18 and above who are engaged in taxable employment or business activities |
-| **Professionals** | Salaried employees across various industries who are required to file personal income taxes |
-| **Small Business Owners & Entrepreneurs** | Individuals managing small to medium-sized enterprises (SMEs) who need to maintain organized records of business expenses for tax purposes |
-| **Freelancers & Gig Economy Workers** | Self-employed individuals and gig workers who may have irregular income streams and diverse expenses requiring meticulous tracking for tax deductions |
-| **Families** | Households aiming to manage and categorize shared expenses to maximize tax reliefs and deductions |
+| **Young Professionals** | Individuals aged 18-35 who are starting their careers and want to develop good financial habits |
+| **Students** | College and university students managing limited budgets and looking to track their spending |
+| **Families** | Households aiming to manage shared expenses and stay within monthly budgets |
+| **Budget-Conscious Individuals** | Anyone who wants to gain better control over their finances and understand their spending patterns |
+| **Small Business Owners** | Entrepreneurs and freelancers who need to track business expenses across different payment methods |
 
 ---
 
@@ -73,51 +82,69 @@ The primary target users for this application are **Malaysian taxpayers**, inclu
 - Data privacy protection
 - Personalized user experiences
 
-#### 2. Receipt Digitization
+#### 2. Monthly Budget Management
+- Set monthly spending limits
+- Real-time budget tracking
+- Visual progress indicators showing remaining budget
+- Budget vs. actual spending comparison
+- Budget alerts when approaching limits
+
+#### 3. Receipt Digitization and Scanning
 - Camera integration for scanning physical receipts
-- Conversion to digital formats for storage
+- **OCR Technology**: Extract information from scanned receipts (merchant name, date, amount, items)
+- Automatic data extraction for quick entry
 - Image quality optimization
+- Manual entry option for backup
 
-#### 3. Data Extraction and Categorization
-- **OCR Technology**: Extract pertinent information from scanned receipts (merchant name, date, amount, items)
-- **AI-Powered Categorization**: Analyze extracted data to suggest appropriate tax-deductible categories:
-  - Medical expenses
-  - Education fees
-  - Insurance contributions
-  - Lifestyle expenses
-- User confirmation and manual override options
+#### 4. Payment Type Categorization
+- Track expenses by payment method:
+  - **Cash Payment**: Record cash transactions
+  - **E-Wallet**: Track e-wallet payments (e.g., Touch 'n Go, GrabPay, Boost)
+  - **Card Payment**: Monitor credit and debit card transactions
+- Payment method analytics and insights
+- Visual breakdown of spending by payment type
 
-#### 4. Cloud-Based Storage
+#### 5. Cloud-Based Storage
 - Secure storage of digitized receipts
 - Data integrity and accessibility
 - Backup and synchronization across devices
 
-#### 5. Receipt Management
-- Organize, search, and retrieve stored receipts
-- Filter by date, category, or amount
-- Edit and update receipt information
-- Delete unwanted receipts
+#### 6. Financial Tracking
+- Add receipts to track spending against budget
+- Categorize expenses (Food, Transportation, Shopping, Entertainment, etc.)
+- Filter and search receipts by date, amount, or payment type
+- View spending history and trends
+- Monthly and yearly expense reports
 
-#### 6. Export Functionality
-- Compile selected receipts into consolidated file formats
-- Export as .ZIP or PDF files
-- Year-based selection for LHDN submission
-- Quick sharing capabilities
+#### 7. Profile Settings
+- Customize user profile information
+- Manage account preferences
+- Set notification preferences
+- Currency and language settings
+- Data privacy controls
 
-#### 7. User Notifications
-- Automated reminders for upcoming tax filing deadlines
-- Prompts to scan and categorize new receipts
+#### 8. Export Functionality
+- Export financial reports as PDF or Excel files
+- Generate monthly spending summaries
+- Share reports via email or messaging apps
+- Backup and restore functionality
+
+#### 9. User Notifications
+- Budget limit alerts
+- Monthly spending summaries
+- Reminders to scan receipts
 - System updates and maintenance notifications
 
 ### UI Components
 
-- **Dashboard**: Overview of receipt statistics, categories, and recent uploads
-- **Camera Interface**: Intuitive scanning interface with guides and tips
-- **Receipt List**: Organized view with filtering and sorting options
-- **Receipt Detail View**: Full receipt information with image preview
-- **Category Management**: Visual representation of expense categories
-- **Export Screen**: Selection interface for generating export files
-- **Profile/Settings**: User preferences, account management, and help center
+- **Dashboard**: Overview of monthly budget status, spending by payment type, and recent transactions
+- **Budget Screen**: Set and monitor monthly budgets with visual progress indicators
+- **Camera Interface**: Intuitive scanning interface for capturing receipts
+- **Add Receipt Screen**: Manual entry or OCR-extracted data with payment type selection
+- **Receipt List**: Organized view with filtering by payment type, date, and amount
+- **Receipt Detail View**: Full receipt information with image preview and payment method
+- **Analytics Screen**: Visual charts and graphs showing spending patterns by category and payment type
+- **Profile/Settings**: User preferences, account management, notification settings, and help center
 
 ---
 
@@ -125,15 +152,15 @@ The primary target users for this application are **Malaysian taxpayers**, inclu
 
 Below are the key screen designs that illustrate the user interface of the application:
 
-### Authentication Screen
-The authentication interface provides secure login and registration functionality for users to access their account.
+### Set Budget Screen
+The set budget interface allows users to define their monthly spending limits and track their financial goals.
 
-![Authentication Screen](images/authentication.png)
+![Set Budget Screen](C:\Users\Adamj\Finance Tracker\set budget.jpeg)
 
-### Dashboard
-The dashboard offers users a comprehensive overview of their receipt management activities, including statistics, recent uploads, and quick access to key features.
+### Add Receipt Screen
+The add receipt interface enables users to scan or manually enter receipt information, categorize expenses, and select payment types.
 
-![Dashboard Screen](images/dashboard.png)
+![Add Receipt Screen](C:\Users\Adamj\Finance Tracker\add receipt.jpeg)
 
 ---
 
@@ -151,36 +178,49 @@ The application is organized into modular components that work together to provi
 - b. Registration Screen
 - c. Password Reset Screen
 
-**Dashboard Screen**: Provides users with an overview of their receipt management activities and quick access to key functions.
-- a. Statistics Widget
-- b. Recent Receipts Widget
-- c. Quick Action Buttons
+**Dashboard Screen**: Provides users with an overview of their financial status and quick access to key functions.
+- a. Budget Overview Widget
+- b. Spending by Payment Type Widget
+- c. Recent Transactions Widget
+- d. Quick Action Buttons (Scan Receipt, Add Expense)
+
+**Budget Management Module**: Enables users to set and monitor monthly budgets.
+- a. Budget Setting Component
+- b. Budget Progress Indicator
+- c. Budget Alert Component
 
 **Receipt Scanner Module**: Enables users to capture and process physical receipts using their device camera.
 - a. Camera Component
 - b. Image Preview Component
 - c. OCR Processing Component
 
+**Add Receipt Module**: Allows users to add receipts manually or from scanned data.
+- a. Receipt Form Component
+- b. Payment Type Selector (Cash, E-Wallet, Card)
+- c. Category Selector
+- d. OCR Data Preview
+
 **Receipt Management Module**: Allows users to view, organize, and manage their digitized receipts.
 - a. Receipt List Component
-- b. Filter/Sort Component
+- b. Filter/Sort Component (by date, payment type, amount)
 - c. Receipt Detail Screen
 - d. Edit Receipt Component
 
-**Category Management Module**: Helps users organize receipts by tax-deductible categories and visualize spending patterns.
-- a. Category Overview
-- b. Category Details
-- c. Expense Charts
+**Analytics Module**: Visualizes spending patterns and financial insights.
+- a. Spending Charts (by category, payment type, time period)
+- b. Budget vs. Actual Comparison
+- c. Monthly Trends
 
-**Export Module**: Facilitates the compilation and export of receipts for tax submission purposes.
+**Export Module**: Facilitates the compilation and export of financial reports.
 - a. Date Range Selector
-- b. Receipt Selection Component
-- c. Export Format Selector
+- b. Report Type Selector
+- c. Export Format Selector (PDF, Excel)
 
 **Profile/Settings Module**: Manages user account information, preferences, and application settings.
 - a. User Profile Component
-- b. Settings Options
-- c. Help/Support Component
+- b. Notification Settings
+- c. Currency/Language Settings
+- d. Help/Support Component
 
 **Common Components**: Reusable UI elements used throughout the application for consistency.
 - a. Loading Indicators
@@ -195,17 +235,22 @@ The application is organized into modular components that work together to provi
    - User profile information
    - App settings and preferences
    - Network connectivity status
+   - Current monthly budget
 
 2. **Feature-Specific State**:
    - Receipt list data
+   - Budget tracking data
+   - Payment type statistics
    - Category information
    - Filter and sort preferences
    - Export selections
+   - Analytics data
 
 3. **Local Component State**:
    - Form inputs
    - UI interactions (modals, dropdowns)
    - Loading states for individual operations
+   - Camera/scanner state
 
 ---
 
@@ -217,35 +262,49 @@ The application is organized into modular components that work together to provi
 
 1. **User**
    - Primary Key: userId
-   - Attributes: email, displayName, createdAt, lastLogin, preferences
+   - Attributes: email, displayName, createdAt, lastLogin, preferences, currency, language
 
-2. **Receipt**
-   - Primary Key: receiptId
+2. **Budget**
+   - Primary Key: budgetId
    - Foreign Key: userId
-   - Attributes: imageUrl, merchantName, amount, date, category, taxDeductible, items, extractedData, tags, notes
+   - Attributes: month, year, budgetLimit, currentSpending, createdAt, updatedAt
 
-3. **Category**
+3. **Receipt**
+   - Primary Key: receiptId
+   - Foreign Key: userId, budgetId
+   - Attributes: imageUrl, merchantName, amount, date, category, paymentType, items, extractedData, notes
+
+4. **PaymentType**
+   - Primary Key: paymentTypeId
+   - Attributes: name (Cash, E-Wallet, Card), icon, description
+
+5. **Category**
    - Primary Key: categoryId
-   - Attributes: name, description, icon, taxDeductible, lhdnCode, keywords
+   - Attributes: name, description, icon, keywords
 
-4. **Export**
+6. **Export**
    - Primary Key: exportId
    - Foreign Key: userId
-   - Attributes: taxYear, format, receiptCount, totalAmount, downloadUrl, createdAt
+   - Attributes: month, year, format, receiptCount, totalAmount, downloadUrl, createdAt
 
 **Relationships:**
 
+- **User ↔ Budget**: One-to-Many (One user can have many monthly budgets)
 - **User ↔ Receipt**: One-to-Many (One user can have many receipts)
+- **Budget ↔ Receipt**: One-to-Many (One budget period contains many receipts)
+- **PaymentType ↔ Receipt**: One-to-Many (One payment type can be used for many receipts)
 - **Category ↔ Receipt**: One-to-Many (One category can be assigned to many receipts)
 - **User ↔ Export**: One-to-Many (One user can create many exports)
 
 ### Data Access Patterns
 
 1. **Retrieve all receipts for a user**: Query `users/{userId}/receipts`
-2. **Filter receipts by category**: Query with `where('category', '==', categoryId)`
-3. **Filter receipts by date range**: Query with `where('date', '>=', startDate).where('date', '<=', endDate)`
-4. **Get receipts for specific tax year**: Query with `where('taxYear', '==', year)`
-5. **Recent receipts**: Query with `orderBy('createdAt', 'desc').limit(10)`
+2. **Filter receipts by payment type**: Query with `where('paymentType', '==', paymentTypeId)`
+3. **Filter receipts by category**: Query with `where('category', '==', categoryId)`
+4. **Filter receipts by date range**: Query with `where('date', '>=', startDate).where('date', '<=', endDate)`
+5. **Get current month budget**: Query with `where('month', '==', currentMonth).where('year', '==', currentYear)`
+6. **Calculate spending by payment type**: Aggregate receipts grouped by `paymentType`
+7. **Recent receipts**: Query with `orderBy('createdAt', 'desc').limit(10)`
 
 ---
 
@@ -253,18 +312,20 @@ The application is organized into modular components that work together to provi
 
 The following flowchart illustrates the user interaction and navigation flow throughout the application:
 
-![TaxMate Application Flowchart](images/flowchart_taxmate.drawio.png)
+![Finance Tracker Application Flowchart](images/flowchart_financetracker.drawio.png)
 
-The flowchart demonstrates the complete user journey from authentication through receipt scanning, categorization, management, and export processes, showing how users interact with various modules and the decision points throughout the application flow.
+The flowchart demonstrates the complete user journey from authentication through budget setting, receipt scanning, expense tracking by payment type, financial analytics, and export processes, showing how users interact with various modules and the decision points throughout the application flow.
 
 ---
 
 ## References
 
-1. MyGOV - The Government of Malaysia's Official Portal. (n.d.). www.malaysia.gov.my. https://www.malaysia.gov.my/portal/content/30643
+1. Personal Finance Management Best Practices. (n.d.). Retrieved January 16, 2026, from various financial literacy resources.
 
-2. Public Ruling No. 6/2000 (Revised) KEEPING SUFFICIENT RECORDS (PERSONS OTHER THAN COMPANIES OR INDIVIDUALS). (n.d.). Retrieved February 7, 2025, from https://phl.hasil.gov.my/pdf/pdfam/PR6_2000_Rev.pdf?
+2. Flutter Documentation. (n.d.). Get started: Learn Flutter. https://docs.flutter.dev/get-started/learn-flutter
 
-3. Flutter Documentation. (n.d.). Get started: Learn Flutter. https://docs.flutter.dev/get-started/learn-flutter
+3. OCR Technology in Mobile Applications. (n.d.). Implementation guides for receipt scanning and data extraction.
+
+4. Mobile Payment Systems in Malaysia. (n.d.). Overview of e-wallet and digital payment platforms.
 
 ---
