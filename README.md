@@ -151,15 +151,14 @@ The primary target users for this application are **individuals seeking better f
 
 Below are the key screen designs that illustrate the user interface of the application:
 
-### Set Budget Screen
-The set budget interface allows users to define their monthly spending limits and track their financial goals.
+### Dashboard Mockup
+![Dashboard Mockup](Finance%20Tracker/Dashboard%20Mockup.png)
 
-![Set Budget Screen](images/set%20budget.jpeg)
+### Add Receipt Mockup
+![Add Receipt Mockup](Finance%20Tracker/Add%20Receipt%20Mockup.png)
 
-### Add Receipt Screen
-The add receipt interface enables users to scan or manually enter receipt information, categorize expenses, and select payment types.
-
-![Add Receipt Screen](images/add%20receipt.jpeg)
+### Filter Receipt Mockup
+![Filter Receipt Mockup](Finance%20Tracker/Filter%20Receipt%20Mockup.png)
 
 ---
 
@@ -302,7 +301,7 @@ The application is organized into modular components that work together to provi
 
 The following flowchart illustrates the user interaction and navigation flow throughout the application:
 
-![Finance Tracker Application Flowchart](images/flowchart_financetracker.drawio.png)
+![Finance Tracker Application Flowchart](Finance%20Tracker/Flowchart%20Finance%20Tracker.jpg)
 
 The flowchart demonstrates the complete user journey from authentication through budget setting, receipt scanning, expense tracking by payment type, financial analytics, and export processes, showing how users interact with various modules and the decision points throughout the application flow.
 
