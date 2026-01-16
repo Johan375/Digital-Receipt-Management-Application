@@ -301,7 +301,7 @@ The application is organized into modular components that work together to provi
 
 The following flowchart illustrates the user interaction and navigation flow throughout the application:
 
-![Finance Tracker Application Flowchart](Finance%20Tracker/Flowchart%20Finance%20Tracker.jpg)
+![Finance Tracker Application Flowchart](Finance%20Tracker/flowchart.jpg)
 
 The flowchart demonstrates the complete user journey from authentication through budget setting, receipt scanning, expense tracking by payment type, financial analytics, and export processes, showing how users interact with various modules and the decision points throughout the application flow.
 
