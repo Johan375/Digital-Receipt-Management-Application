@@ -65,7 +65,6 @@ The primary target users for this application are **individuals seeking better f
 
 | User Group | Description |
 |------------|-------------|
-| **Young Professionals** | Individuals aged 18-35 who are starting their careers and want to develop good financial habits |
 | **Students** | College and university students managing limited budgets and looking to track their spending |
 | **Families** | Households aiming to manage shared expenses and stay within monthly budgets |
 | **Budget-Conscious Individuals** | Anyone who wants to gain better control over their finances and understand their spending patterns |
