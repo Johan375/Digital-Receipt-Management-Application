@@ -155,12 +155,12 @@ Below are the key screen designs that illustrate the user interface of the appli
 ### Set Budget Screen
 The set budget interface allows users to define their monthly spending limits and track their financial goals.
 
-![Set Budget Screen](C:\Users\Adamj\Finance Tracker\set budget.jpeg)
+![Set Budget Screen](images/set%20budget.jpeg)
 
 ### Add Receipt Screen
 The add receipt interface enables users to scan or manually enter receipt information, categorize expenses, and select payment types.
 
-![Add Receipt Screen](C:\Users\Adamj\Finance Tracker\add receipt.jpeg)
+![Add Receipt Screen](images/add%20receipt.jpeg)
 
 ---
 
@@ -296,15 +296,6 @@ The application is organized into modular components that work together to provi
 - **Category ↔ Receipt**: One-to-Many (One category can be assigned to many receipts)
 - **User ↔ Export**: One-to-Many (One user can create many exports)
 
-### Data Access Patterns
-
-1. **Retrieve all receipts for a user**: Query `users/{userId}/receipts`
-2. **Filter receipts by payment type**: Query with `where('paymentType', '==', paymentTypeId)`
-3. **Filter receipts by category**: Query with `where('category', '==', categoryId)`
-4. **Filter receipts by date range**: Query with `where('date', '>=', startDate).where('date', '<=', endDate)`
-5. **Get current month budget**: Query with `where('month', '==', currentMonth).where('year', '==', currentYear)`
-6. **Calculate spending by payment type**: Aggregate receipts grouped by `paymentType`
-7. **Recent receipts**: Query with `orderBy('createdAt', 'desc').limit(10)`
 
 ---
 
