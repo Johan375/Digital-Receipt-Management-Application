@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "761363814982",
+    "project_id": "financetrack-79432",
+    "storage_bucket": "financetrack-79432.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761363814982:android:3042f225bb2bcf0ad10847",
+        "android_client_info": {
+          "package_name": "com.example.financetrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIeSKpVKJDB5wVoKWhJxYQVlsXdSQF9hI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:761363814982:android:64288f25af3034ddd10847",
+        "android_client_info": {
+          "package_name": "com.example.tax_mate_v4"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDIeSKpVKJDB5wVoKWhJxYQVlsXdSQF9hI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
