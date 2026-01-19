@@ -12,7 +12,8 @@
 
 ## Final UI Screenshots
 
-_Screenshots to be added here_
+![Login Homepage](images/Finance%20Tracker%20Final%20UI/login%20homepage.jpeg)
+
 
 ---
 
