@@ -247,7 +247,7 @@ The application follows a modular architecture with the following key components
 
 ## Conclusion
 
-The Finance Tracker application successfully addresses the core challenges of personal financial management by providing an intuitive, comprehensive solution for budget tracking, receipt digitization, and expense categorization by payment type. While there are current limitations, the roadmap for future enhancements positions the application for continued growth and improved user value.
+The Finance Tracker application successfully addresses the core challenges of personal financial management by providing an intuitive, comprehensive solution for budget tracking, receipt digitization and expense categorization by payment type. While there are current limitations, the roadmap for future enhancements positions the application for continued growth and improved user value.
 
 The application's modular architecture and scalable design ensure that planned enhancements can be integrated seamlessly, providing users with an increasingly powerful tool for managing their personal finances effectively.
 
