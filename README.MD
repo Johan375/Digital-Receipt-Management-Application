@@ -46,50 +46,50 @@
 
 ### Core Functionalities Implemented
 
-#### ✅ User Authentication
+#### User Authentication
 - Secure account creation and login processes
 - Data privacy protection for all user information
 - Personalized user experiences based on individual profiles
 
-#### ✅ Monthly Budget Management
+#### Monthly Budget Management
 - Ability to set monthly spending limits in profile setting
 - Real-time budget tracking with automatic updates
 - Visual progress indicators showing remaining budget
 - Budget vs. actual spending comparison analytics
 - Budget alerts when approaching spending limits
 
-#### ✅ Receipt Digitization and Scanning
+#### Receipt Digitization and Scanning
 - Camera integration for scanning physical receipts
 - **OCR Technology**: Automated extraction of merchant name, date, amount, and items from scanned receipts
 - Automatic data population for quick entry
 - Image quality optimization for better scanning results
 - Manual entry option as backup method
 
-#### ✅ Payment Type Categorization
+#### Payment Type Categorization
 - Implement payment type categorization ( Cash, E-Wallet, Credit/Debit Card )
 - Payment method analytics with visual breakdowns
 
-#### ✅ Cloud-Based Storage
+#### Cloud-Based Storage
 - Secure storage of all digitized receipts
 - Data integrity and accessibility across sessions
 - Backup and synchronization capabilities
 
-#### ✅ Financial Tracking System
+#### Financial Tracking System
 - Add and categorize receipts to track spending against budget
 - Multiple expense categories (Food, Transportation, Shopping, Entertainment, etc.)
 - Filter and search receipts by date, amount, or payment type
 
-#### ✅ Profile Settings
+#### Profile Settings
 - Customizable user profile information
 - Notification preferences configuration
 - Set monthly budget
 
-#### ✅ Export Functionality
+#### Export Functionality
 - Export financial reports as PDF or JPG
 - Generate detailed spending summaries
 - Save receipt
 
-#### ✅ User Notifications
+#### User Notifications
 - Budget limit alerts when approaching thresholds
 - Monthly spending summaries
 
