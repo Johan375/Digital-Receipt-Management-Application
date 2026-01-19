@@ -12,20 +12,28 @@
 
 ## Final UI Screenshots
 
+Homepage
 ![Login Homepage](images/Finance%20Tracker%20Final%20UI/login%20homepage.jpeg)
 
+Dashboard
 ![Dashboard Homepage](images/Finance%20Tracker%20Final%20UI/dashboard%20homepage.jpeg)
 
+Add Receipt
 ![Add Receipt](images/Finance%20Tracker%20Final%20UI/Add%20receipt.jpeg)
 
+Review Receipt
 ![Review Receipt](images/Finance%20Tracker%20Final%20UI/review%20receipt.jpeg)
 
+Exceed Budget Warning
 ![Exceed Budget Warning](images/Finance%20Tracker%20Final%20UI/exceed%20budget%20warning.jpeg)
 
+Profile Setting
 ![Profile Setting](images/Finance%20Tracker%20Final%20UI/profile%20setting.jpeg)
 
+Set Monthly Budget
 ![Set Monthly Budget](images/Finance%20Tracker%20Final%20UI/Set%20monthly%20budget.jpeg)
 
+Admin Dashboard
 ![Admin Dashboard Homepage](images/Finance%20Tracker%20Final%20UI/admin%20dashboard%20homepage.jpeg)
 
 ---
