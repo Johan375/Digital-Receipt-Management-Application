@@ -1,5 +1,13 @@
 # Finance Tracker - Final Report
 
+## Project Team
+
+| Name | Matric Number |
+|------|---------------|
+| Muhammad Ikmal Hakimi Bin Rosli | 2210827 |
+| Muhammad Muslihuddin Bin Mustaffar | 2213263 |
+| Johan Adam Bin Ahmad | 2116387 |
+
 ---
 
 ## Final UI Screenshots
@@ -167,30 +175,6 @@ The application follows a modular architecture with the following key components
 - Loading states for individual operations
 - Camera/scanner state
 
-#### Data Model
-
-**Key Entities:**
-
-1. **User**: userId (PK), email, displayName, createdAt, lastLogin, preferences, currency, language
-
-2. **Budget**: budgetId (PK), userId (FK), month, year, budgetLimit, currentSpending, createdAt, updatedAt
-
-3. **Receipt**: receiptId (PK), userId (FK), budgetId (FK), imageUrl, merchantName, amount, date, category, paymentType, items, extractedData, notes
-
-4. **PaymentType**: paymentTypeId (PK), name, icon, description
-
-5. **Category**: categoryId (PK), name, description, icon, keywords
-
-6. **Export**: exportId (PK), userId (FK), month, year, format, receiptCount, totalAmount, downloadUrl, createdAt
-
-**Entity Relationships:**
-- User ↔ Budget: One-to-Many
-- User ↔ Receipt: One-to-Many
-- Budget ↔ Receipt: One-to-Many
-- PaymentType ↔ Receipt: One-to-Many
-- Category ↔ Receipt: One-to-Many
-- User ↔ Export: One-to-Many
-
 #### Technical Features
 
 **OCR Implementation:**
@@ -205,8 +189,6 @@ The application follows a modular architecture with the following key components
 
 **Payment Type Tracking:**
 - Comprehensive tracking across three payment methods (Cash, E-Wallet, Card)
-- Analytics and insights by payment type
-- Visual representation of spending patterns
 
 ---
 
@@ -230,17 +212,7 @@ The application follows a modular architecture with the following key components
 - **Limitation**: OCR works best with standard printed receipts
 - **Impact**: Non-standard formats may require manual entry
 
-#### 5. Category Intelligence
-- **Limitation**: Categories must be manually selected for each receipt
-- **Impact**: Additional time required for expense categorization
-
-#### 6. Budget Templates
-- **Limitation**: Each monthly budget must be set manually
-- **Impact**: No automatic budget rollover or template system
-
 ### Planned Future Enhancements
-
-#### Phase 1: Enhanced Intelligence
 
 **1. AI-Powered Categorization**
 - Implement machine learning to automatically categorize expenses based on merchant names and patterns
@@ -256,119 +228,6 @@ The application follows a modular architecture with the following key components
 - Predictive analytics for future spending trends
 - Personalized financial insights and tips
 
-#### Phase 2: Expanded Features
-
-**4. Multi-Currency Support**
-- Full support for multiple currencies with automatic conversion
-- Real-time exchange rate updates
-- International transaction tracking
-
-**5. Bill Splitting and Shared Expenses**
-- Split receipts among multiple users
-- Shared budget tracking for families or groups
-- Expense settlement and payment tracking
-
-**6. Recurring Expenses**
-- Track and manage recurring payments (subscriptions, bills)
-- Automatic budget allocation for fixed expenses
-- Reminders for upcoming payments
-
-**7. Financial Goals**
-- Set and track savings goals
-- Investment tracking integration
-- Progress visualization and milestone celebrations
-
-#### Phase 3: Integration and Automation
-
-**8. Bank Account Integration**
-- Connect to bank accounts for automatic transaction import
-- E-wallet API integration for seamless tracking
-- Credit card statement synchronization
-
-**9. Tax Preparation**
-- Categorize expenses for tax purposes
-- Generate tax-ready reports
-- Receipt organization by tax year
-
-**10. Merchant Integration**
-- Partner with merchants for automatic digital receipt delivery
-- Loyalty program integration
-- Cashback and rewards tracking
-
-#### Phase 4: Advanced Analytics
-
-**11. Comprehensive Reporting**
-- Advanced financial reports with customizable parameters
-- Year-over-year comparison analytics
-- Spending pattern predictions
-
-**12. Budget Forecasting**
-- Predictive modeling for future budget requirements
-- Seasonal spending analysis
-- Anomaly detection for unusual expenses
-
-**13. Data Visualization**
-- Interactive charts and graphs
-- Customizable dashboard widgets
-- Export visualizations for presentations
-
-#### Phase 5: User Experience Enhancements
-
-**14. Offline Mode**
-- Full offline functionality with automatic sync
-- Local storage of recent receipts and data
-- Queue system for pending uploads
-
-**15. Voice Commands**
-- Voice-activated expense entry
-- Hands-free receipt logging
-- Voice search for receipts and transactions
-
-**16. Widget Support**
-- Home screen widgets for quick budget overview
-- Quick action widgets for expense entry
-- Real-time spending notifications
-
-**17. Dark Mode**
-- Full dark mode support for all screens
-- Automatic theme switching based on system preferences
-- Customizable color themes
-
-#### Phase 6: Social and Collaborative Features
-
-**18. Financial Challenges**
-- Community challenges for saving goals
-- Leaderboards and achievements
-- Social sharing of financial milestones (privacy-conscious)
-
-**19. Expert Advice Integration**
-- Financial advisor consultation features
-- Personalized financial planning resources
-- Educational content and tutorials
-
-**20. Family Accounts**
-- Family budget management dashboard
-- Parent-child expense monitoring
-- Allowance tracking and management
-
-### Security Enhancements
-
-**Future Security Features:**
-- Biometric authentication (fingerprint, face recognition)
-- Two-factor authentication (2FA)
-- End-to-end encryption for all data
-- Advanced fraud detection
-- Data anonymization options
-
-### Performance Optimization
-
-**Planned Optimizations:**
-- Faster receipt processing with edge computing
-- Improved image compression algorithms
-- Reduced app size and memory footprint
-- Battery optimization for background processes
-- Caching strategies for better performance
-
 ---
 
 ## Conclusion
@@ -378,15 +237,3 @@ The Finance Tracker application successfully addresses the core challenges of pe
 The application's modular architecture and scalable design ensure that planned enhancements can be integrated seamlessly, providing users with an increasingly powerful tool for managing their personal finances effectively.
 
 ---
-
-## Project Team
-
-| Name | Matric Number |
-|------|---------------|
-| Muhammad Ikmal Hakimi Bin Rosli | 2210827 |
-| Muhammad Muslihuddin Bin Mustaffar | 2213263 |
-| Johan Adam Bin Ahmad | 2116387 |
-
----
-
-*Finance Tracker - Empowering Financial Freedom Through Smart Tracking*
