@@ -28,6 +28,9 @@
 ## Exceed Budget Warning
 ![Exceed Budget Warning](images/Finance%20Tracker%20Final%20UI/exceed%20budget%20warning.jpeg)
 
+## View All Receipt
+![Receipt Categorize](images/Finance%20Tracker%20Final%20UI/Receipt%20Categorize.jpeg)
+
 ## Profile Setting
 ![Profile Setting](images/Finance%20Tracker%20Final%20UI/profile%20setting.jpeg)
 
@@ -49,7 +52,7 @@
 - Personalized user experiences based on individual profiles
 
 #### ✅ Monthly Budget Management
-- Ability to set monthly spending limits
+- Ability to set monthly spending limits in profile setting
 - Real-time budget tracking with automatic updates
 - Visual progress indicators showing remaining budget
 - Budget vs. actual spending comparison analytics
@@ -63,12 +66,8 @@
 - Manual entry option as backup method
 
 #### ✅ Payment Type Categorization
-Successfully implemented expense tracking by payment method:
-- **Cash Payment**: Record and track cash transactions
-- **E-Wallet**: Monitor e-wallet payments (Touch 'n Go, GrabPay, Boost, etc.)
-- **Card Payment**: Track credit and debit card transactions
+- Implement payment type categorization ( Cash, E-Wallet, Credit/Debit Card )
 - Payment method analytics with visual breakdowns
-- Spending insights by payment type
 
 #### ✅ Cloud-Based Storage
 - Secure storage of all digitized receipts
@@ -79,27 +78,20 @@ Successfully implemented expense tracking by payment method:
 - Add and categorize receipts to track spending against budget
 - Multiple expense categories (Food, Transportation, Shopping, Entertainment, etc.)
 - Filter and search receipts by date, amount, or payment type
-- Comprehensive spending history and trend analysis
-- Monthly and yearly expense reports
 
 #### ✅ Profile Settings
 - Customizable user profile information
-- Account preferences management
 - Notification preferences configuration
-- Currency and language settings
-- Data privacy controls
+- Set monthly budget
 
 #### ✅ Export Functionality
-- Export financial reports as PDF or Excel files
-- Generate detailed monthly spending summaries
-- Share reports via email or messaging apps
-- Backup and restore functionality
+- Export financial reports as PDF or JPG
+- Generate detailed spending summaries
+- Save receipt
 
 #### ✅ User Notifications
 - Budget limit alerts when approaching thresholds
 - Monthly spending summaries
-- Reminders to scan and log receipts
-- System updates and maintenance notifications
 
 ---
 
@@ -128,7 +120,7 @@ The application follows a modular architecture with the following key components
 - Budget Overview Widget displaying current budget status
 - Spending by Payment Type Widget with visual breakdowns
 - Recent Transactions Widget for quick access
-- Quick Action Buttons (Scan Receipt, Add Expense)
+- Quick Action Buttons (Scan Receipt, View All Receipt)
 
 **3. Budget Management Module**
 - Budget Setting Component for monthly limit configuration
@@ -160,7 +152,7 @@ The application follows a modular architecture with the following key components
 **8. Export Module**
 - Date Range Selector for report generation
 - Report Type Selector for customization
-- Export Format Selector (PDF, Excel)
+- Export Format Selector (PDF, JPEG)
 
 **9. Profile/Settings Module**
 - User Profile Component
@@ -211,7 +203,7 @@ The application follows a modular architecture with the following key components
 - Backup and restore capabilities
 
 **Payment Type Tracking:**
-- Comprehensive tracking across three payment methods (Cash, E-Wallet, Card)
+- Comprehensive tracking across three payment methods (Cash, E-Wallet, Card/Debit)
 
 ---
 
